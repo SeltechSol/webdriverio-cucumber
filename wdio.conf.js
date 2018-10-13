@@ -139,18 +139,24 @@ exports.config = {
       //  tagsInTitle: false,
         // <number> timeout for step definitions
       //  timeout: 20000,
-      format: 'json:.json/results.json',
-        strict: true
+      // format: 'json:.json/results.json',
+      //   strict: true
     },
     //
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: http://webdriver.io/guide/reporters/dot.html
-    reporters: ['spec'],//,'allure','json'],//'multiple-cucumber-html'],
+    reporters: ['spec','junit','allure'],//,'allure','json'],//'multiple-cucumber-html'],
     reporterOptions : {
       allure : {
-         outputDir : 'allure-results'
-       }
+         outputDir : 'allure-results',
+         disableWebdriverScreenshotsReporting: false,
+         useCucumberStepReporter: true
+       },
+       junit : {
+          outputDir : './JUnit'
+        },
+
        // ,json : {
        //    outputDir : 'json',
        //     combined: true,
