@@ -150,7 +150,7 @@ exports.config = {
     reporterOptions : {
       allure : {
          outputDir : 'allure-results',
-         disableWebdriverScreenshotsReporting: false,
+         disableWebdriverScreenshotsReporting: true,
          useCucumberStepReporter: true
        },
        junit : {
