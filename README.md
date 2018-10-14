@@ -1,7 +1,3 @@
-# WebdriverIO Course Content
-
-Companion content for [Automated Testing with WebdriverIO](http://learnwebdriverio.com/) course.
-
 ## Installation
 
 You must have [Node.js](https://www.nodejs.org/) installed.
@@ -18,8 +14,8 @@ Install the Dependencies:
 npm install
 ```
 
-Run the test server:
+Run the tests :
 
 ```sh
-npm start
+npm test
 ```
