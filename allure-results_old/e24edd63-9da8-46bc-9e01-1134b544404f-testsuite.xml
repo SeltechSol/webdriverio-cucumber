@@ -1,0 +1,97 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1539513518452' stop='1539513519653'>
+    <name>Home Page Checks Check the Buy button functionality</name>
+    <title>Home Page Checks Check the Buy button functionality</title>
+    <test-cases>
+        <test-case start='1539513518452' status='passed' stop='1539513518914'>
+            <name>I navigate to the site</name>
+            <title>I navigate to the site</title>
+            <labels>
+                <label name='feature' value='Home Page Checks'/>
+                <label name='story' value='Check the Buy button functionality'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":1,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\Personal\\Work\\Javascript\\webdriverio-cucumber\\features\\HomePage.feature"]'/>
+            </parameters>
+            <steps>
+                <step start='1539513518452' status='undefined'>
+                    <name>GET /wd/hub/session/748bc666f9d9d7e2c37ac5ad0417e086/screenshot</name>
+                    <title>GET /wd/hub/session/748bc666f9d9d7e2c37ac5ad0417e086/screenshot</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539513518452' status='passed' stop='1539513518909'>
+                            <name>POST /wd/hub/session/748bc666f9d9d7e2c37ac5ad0417e086/url</name>
+                            <title>POST /wd/hub/session/748bc666f9d9d7e2c37ac5ad0417e086/url</title>
+                            <attachments>
+                                <attachment title='Request' source='7dcd516e-9cda-4370-a1a1-1d1f70a7a86e-attachment.json' type='application/json' size='72'/>
+                                <attachment title='Screenshot' source='c399e7ef-76d7-4208-89af-f926f5c69631-attachment.png' type='image/png' size='271183'/>
+                                <attachment title='Response' source='2c3e04ad-5b3f-4d5c-8dd1-5bd34b9f91b8-attachment.json' type='application/json' size='91'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1539513518914' status='passed' stop='1539513519650'>
+            <name>I click on the "buy" button</name>
+            <title>I click on the "buy" button</title>
+            <labels>
+                <label name='feature' value='Home Page Checks'/>
+                <label name='story' value='Check the Buy button functionality'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":1,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\Personal\\Work\\Javascript\\webdriverio-cucumber\\features\\HomePage.feature"]'/>
+            </parameters>
+            <steps>
+                <step start='1539513518919' status='passed' stop='1539513518952'>
+                    <name>POST /wd/hub/session/748bc666f9d9d7e2c37ac5ad0417e086/element</name>
+                    <title>POST /wd/hub/session/748bc666f9d9d7e2c37ac5ad0417e086/element</title>
+                    <attachments>
+                        <attachment title='Request' source='a79df4a9-8bd0-431e-8b07-6ff444192e2e-attachment.json' type='application/json' size='53'/>
+                        <attachment title='Response' source='29c8da5b-5964-48f9-93c8-0a01ba5d3fbe-attachment.json' type='application/json' size='137'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1539513518955' status='passed' stop='1539513519644'>
+                    <name>POST /wd/hub/session/748bc666f9d9d7e2c37ac5ad0417e086/element/0.11625742356619817-1/click</name>
+                    <title>POST /wd/hub/session/748bc666f9d9d7e2c37ac5ad0417e086/element/0.11625742356619817-1/click</title>
+                    <attachments>
+                        <attachment title='Response' source='8d5d888c-52f5-4a78-857b-215caa89e7a4-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1539513519650' status='passed' stop='1539513519653'>
+            <name>I should be seeing the "Mom's_Old-Fashioned_Robot_Oil" page</name>
+            <title>I should be seeing the "Mom's_Old-Fashioned_Robot_Oil" page</title>
+            <labels>
+                <label name='feature' value='Home Page Checks'/>
+                <label name='story' value='Check the Buy button functionality'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":1,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\Personal\\Work\\Javascript\\webdriverio-cucumber\\features\\HomePage.feature"]'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

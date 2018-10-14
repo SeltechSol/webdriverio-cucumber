@@ -1,0 +1,213 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1539513531435' stop='1539513532252'>
+    <name>Reviews Checks Check the Empty Review Text Error</name>
+    <title>Reviews Checks Check the Empty Review Text Error</title>
+    <test-cases>
+        <test-case start='1539513531436' status='passed' stop='1539513531743'>
+            <name>I navigate to the site</name>
+            <title>I navigate to the site</title>
+            <labels>
+                <label name='feature' value='Reviews Checks'/>
+                <label name='story' value='Check the Empty Review Text Error'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":1,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\Personal\\Work\\Javascript\\webdriverio-cucumber\\features\\Reviews.feature"]'/>
+            </parameters>
+            <steps>
+                <step start='1539513531436' status='undefined'>
+                    <name>GET /wd/hub/session/f611482a10495331155f9e2bf6508611/screenshot</name>
+                    <title>GET /wd/hub/session/f611482a10495331155f9e2bf6508611/screenshot</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539513531436' status='passed' stop='1539513531742'>
+                            <name>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/url</name>
+                            <title>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/url</title>
+                            <attachments>
+                                <attachment title='Request' source='acb9242a-55e1-4c21-aa89-262256283fd9-attachment.json' type='application/json' size='72'/>
+                                <attachment title='Screenshot' source='f3d01d05-6158-4bef-8c0b-10e22b406c72-attachment.png' type='image/png' size='54203'/>
+                                <attachment title='Response' source='3c098393-8bc4-49b0-bf54-fc4e15ef8d5a-attachment.json' type='application/json' size='91'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1539513531743' status='passed' stop='1539513531923'>
+            <name>I click on the "product" button</name>
+            <title>I click on the "product" button</title>
+            <labels>
+                <label name='feature' value='Reviews Checks'/>
+                <label name='story' value='Check the Empty Review Text Error'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":1,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\Personal\\Work\\Javascript\\webdriverio-cucumber\\features\\Reviews.feature"]'/>
+            </parameters>
+            <steps>
+                <step start='1539513531746' status='passed' stop='1539513531783'>
+                    <name>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element</name>
+                    <title>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element</title>
+                    <attachments>
+                        <attachment title='Request' source='e734db00-2820-4d10-81f3-bc2ac8b18818-attachment.json' type='application/json' size='63'/>
+                        <attachment title='Response' source='7a93188f-8b7d-45e2-a6c6-930f0d05ef68-attachment.json' type='application/json' size='136'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1539513531784' status='passed' stop='1539513531918'>
+                    <name>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element/0.2916305575355689-1/click</name>
+                    <title>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element/0.2916305575355689-1/click</title>
+                    <attachments>
+                        <attachment title='Response' source='4d130a6a-ea49-42c8-b9d5-fb624218d731-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1539513531923' status='passed' stop='1539513532073'>
+            <name>I set the email value "test@test.com"</name>
+            <title>I set the email value "test@test.com"</title>
+            <labels>
+                <label name='feature' value='Reviews Checks'/>
+                <label name='story' value='Check the Empty Review Text Error'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":1,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\Personal\\Work\\Javascript\\webdriverio-cucumber\\features\\Reviews.feature"]'/>
+            </parameters>
+            <steps>
+                <step start='1539513531927' status='passed' stop='1539513531959'>
+                    <name>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element</name>
+                    <title>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element</title>
+                    <attachments>
+                        <attachment title='Request' source='2b982c80-926b-49e4-a71b-10d23886fae2-attachment.json' type='application/json' size='50'/>
+                        <attachment title='Response' source='498825ff-f7ab-4c19-9cb5-8dcf84e4ce23-attachment.json' type='application/json' size='136'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1539513531962' status='passed' stop='1539513531991'>
+                    <name>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element/0.9310130083926951-1/clear</name>
+                    <title>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element/0.9310130083926951-1/clear</title>
+                    <attachments>
+                        <attachment title='Response' source='56b0c49f-9a32-4ba7-abd3-73abe86cb094-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1539513531991' status='passed' stop='1539513532070'>
+                    <name>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element/0.9310130083926951-1/value</name>
+                    <title>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element/0.9310130083926951-1/value</title>
+                    <attachments>
+                        <attachment title='Request' source='2f896126-1f29-439e-9c4d-a11f849e36a6-attachment.json' type='application/json' size='221'/>
+                        <attachment title='Response' source='f97a39d0-eb4b-4fe5-b065-4cf98020f997-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1539513532073' status='passed' stop='1539513532155'>
+            <name>I click on review text box</name>
+            <title>I click on review text box</title>
+            <labels>
+                <label name='feature' value='Reviews Checks'/>
+                <label name='story' value='Check the Empty Review Text Error'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":1,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\Personal\\Work\\Javascript\\webdriverio-cucumber\\features\\Reviews.feature"]'/>
+            </parameters>
+            <steps>
+                <step start='1539513532074' status='passed' stop='1539513532090'>
+                    <name>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element</name>
+                    <title>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element</title>
+                    <attachments>
+                        <attachment title='Request' source='43914aca-b6a8-455c-89a5-199e29ce55e3-attachment.json' type='application/json' size='68'/>
+                        <attachment title='Response' source='12f99757-3c94-4efd-a70e-cd4761035192-attachment.json' type='application/json' size='136'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1539513532090' status='passed' stop='1539513532151'>
+                    <name>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element/0.9310130083926951-2/click</name>
+                    <title>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element/0.9310130083926951-2/click</title>
+                    <attachments>
+                        <attachment title='Response' source='300d175c-5146-4767-bf3a-dc0cc9c00738-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1539513532155' status='passed' stop='1539513532252'>
+            <name>I should see error message "Please enter a valid email address." for review</name>
+            <title>I should see error message "Please enter a valid email address." for review</title>
+            <labels>
+                <label name='feature' value='Reviews Checks'/>
+                <label name='story' value='Check the Empty Review Text Error'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":1,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\Personal\\Work\\Javascript\\webdriverio-cucumber\\features\\Reviews.feature"]'/>
+            </parameters>
+            <steps>
+                <step start='1539513532159' status='passed' stop='1539513532181'>
+                    <name>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/elements</name>
+                    <title>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='e77c9b6f-4842-4428-b959-8c290feae93f-attachment.json' type='application/json' size='68'/>
+                        <attachment title='Response' source='3f9cbd99-3cf0-4a7d-9e50-c185fbc592eb-attachment.json' type='application/json' size='160'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1539513532181' status='passed' stop='1539513532200'>
+                    <name>GET /wd/hub/session/f611482a10495331155f9e2bf6508611/element/0.9310130083926951-3/displayed</name>
+                    <title>GET /wd/hub/session/f611482a10495331155f9e2bf6508611/element/0.9310130083926951-3/displayed</title>
+                    <attachments>
+                        <attachment title='Response' source='db7f61b5-617b-45da-918e-dfa474ee98b8-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1539513532202' status='passed' stop='1539513532222'>
+                    <name>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element</name>
+                    <title>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element</title>
+                    <attachments>
+                        <attachment title='Request' source='0236ece1-0a9d-411c-83b3-fdc3406ffef2-attachment.json' type='application/json' size='68'/>
+                        <attachment title='Response' source='4f61871d-900b-4b8f-b5b7-870b1a9a2045-attachment.json' type='application/json' size='136'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1539513532222' status='passed' stop='1539513532246'>
+                    <name>GET /wd/hub/session/f611482a10495331155f9e2bf6508611/element/0.9310130083926951-3/text</name>
+                    <title>GET /wd/hub/session/f611482a10495331155f9e2bf6508611/element/0.9310130083926951-3/text</title>
+                    <attachments>
+                        <attachment title='Response' source='928ca90d-5dc7-4c54-ab5e-b80dd363159a-attachment.json' type='application/json' size='134'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

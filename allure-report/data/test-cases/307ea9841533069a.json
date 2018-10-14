@@ -1,0 +1,274 @@
+{
+  "uid" : "307ea9841533069a",
+  "name" : "Check the product button functionality",
+  "fullName" : "Home Page Checks.Check the product button functionality",
+  "historyId" : "e7d45018d9227233cd91da9db848db96",
+  "time" : {
+    "start" : 1539515278254,
+    "stop" : 1539515279730,
+    "duration" : 1476
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Visible is true..!: expected true to equal false",
+  "statusTrace" : "AssertionError: Visible is true..!: expected true to equal false\n                    at World.<anonymous> (C:\\Personal\\Work\\Javascript\\webdriverio-cucumber\\test\\steps\\homePage.step.js:33:24)\n                    at C:\\Personal\\Work\\Javascript\\webdriverio-cucumber\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\Personal\\Work\\Javascript\\webdriverio-cucumber\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at World.executeSync (C:\\Personal\\Work\\Javascript\\webdriverio-cucumber\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\Personal\\Work\\Javascript\\webdriverio-cucumber\\node_modules\\wdio-sync\\build\\index.js:210:29",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Visible is true..!: expected true to equal false",
+    "statusTrace" : "AssertionError: Visible is true..!: expected true to equal false\n                    at World.<anonymous> (C:\\Personal\\Work\\Javascript\\webdriverio-cucumber\\test\\steps\\homePage.step.js:33:24)\n                    at C:\\Personal\\Work\\Javascript\\webdriverio-cucumber\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\Personal\\Work\\Javascript\\webdriverio-cucumber\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at World.executeSync (C:\\Personal\\Work\\Javascript\\webdriverio-cucumber\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\Personal\\Work\\Javascript\\webdriverio-cucumber\\node_modules\\wdio-sync\\build\\index.js:210:29",
+    "steps" : [ {
+      "name" : "I navigate to the site",
+      "time" : {
+        "start" : 1539515278256,
+        "stop" : 1539515279153,
+        "duration" : 897
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST /wd/hub/session/1974a174cd32a5d1abbe3515ba0bceb1/url",
+        "time" : {
+          "start" : 1539515278260,
+          "stop" : 1539515279145,
+          "duration" : 885
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "1bda5af31050f7ae",
+          "name" : "Request",
+          "source" : "1bda5af31050f7ae.json",
+          "type" : "application/json",
+          "size" : 72
+        }, {
+          "uid" : "9d67b23ef4e57822",
+          "name" : "Response",
+          "source" : "9d67b23ef4e57822.json",
+          "type" : "application/json",
+          "size" : 91
+        } ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "I click on the \"product\" button",
+      "time" : {
+        "start" : 1539515279153,
+        "stop" : 1539515279627,
+        "duration" : 474
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST /wd/hub/session/1974a174cd32a5d1abbe3515ba0bceb1/element",
+        "time" : {
+          "start" : 1539515279158,
+          "stop" : 1539515279192,
+          "duration" : 34
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "f22668c1963a7ec",
+          "name" : "Request",
+          "source" : "f22668c1963a7ec.json",
+          "type" : "application/json",
+          "size" : 63
+        }, {
+          "uid" : "bb2e715c2631a0b4",
+          "name" : "Response",
+          "source" : "bb2e715c2631a0b4.json",
+          "type" : "application/json",
+          "size" : 137
+        } ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "POST /wd/hub/session/1974a174cd32a5d1abbe3515ba0bceb1/element/0.49072597085692427-1/click",
+        "time" : {
+          "start" : 1539515279193,
+          "stop" : 1539515279623,
+          "duration" : 430
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "2605052c423446a6",
+          "name" : "Response",
+          "source" : "2605052c423446a6.json",
+          "type" : "application/json",
+          "size" : 91
+        } ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 3,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "I should be seeing the review label",
+      "time" : {
+        "start" : 1539515279627,
+        "stop" : 1539515279730,
+        "duration" : 103
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: Visible is true..!: expected true to equal false\n                    at World.<anonymous> (C:\\Personal\\Work\\Javascript\\webdriverio-cucumber\\test\\steps\\homePage.step.js:33:24)\n                    at C:\\Personal\\Work\\Javascript\\webdriverio-cucumber\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\Personal\\Work\\Javascript\\webdriverio-cucumber\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at World.executeSync (C:\\Personal\\Work\\Javascript\\webdriverio-cucumber\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\Personal\\Work\\Javascript\\webdriverio-cucumber\\node_modules\\wdio-sync\\build\\index.js:210:29",
+      "steps" : [ {
+        "name" : "POST /wd/hub/session/1974a174cd32a5d1abbe3515ba0bceb1/elements",
+        "time" : {
+          "start" : 1539515279631,
+          "stop" : 1539515279661,
+          "duration" : 30
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "ebe45cb64bf9e010",
+          "name" : "Request",
+          "source" : "ebe45cb64bf9e010.json",
+          "type" : "application/json",
+          "size" : 66
+        }, {
+          "uid" : "e81415de64dc4b56",
+          "name" : "Response",
+          "source" : "e81415de64dc4b56.json",
+          "type" : "application/json",
+          "size" : 162
+        } ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "POST /wd/hub/session/1974a174cd32a5d1abbe3515ba0bceb1/elements",
+        "time" : {
+          "start" : 1539515279663,
+          "stop" : 1539515279685,
+          "duration" : 22
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "a822b1e13b4f4dae",
+          "name" : "Request",
+          "source" : "a822b1e13b4f4dae.json",
+          "type" : "application/json",
+          "size" : 66
+        }, {
+          "uid" : "3c74b0e7903c7703",
+          "name" : "Response",
+          "source" : "3c74b0e7903c7703.json",
+          "type" : "application/json",
+          "size" : 162
+        } ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 2,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "GET /wd/hub/session/1974a174cd32a5d1abbe3515ba0bceb1/element/0.004333349687686061-1/displayed",
+        "time" : {
+          "start" : 1539515279686,
+          "stop" : 1539515279716,
+          "duration" : 30
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "1dd8575a21c2d0ab",
+          "name" : "Response",
+          "source" : "1dd8575a21c2d0ab.json",
+          "type" : "application/json",
+          "size" : 91
+        } ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 1,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 5,
+      "stepsCount" : 3,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 10,
+    "stepsCount" : 9,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Home Page Checks"
+  }, {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Home Page Checks"
+  }, {
+    "name" : "testClass",
+    "value" : "Home Page Checks"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check the product button functionality"
+  }, {
+    "name" : "package",
+    "value" : "Home Page Checks"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "307ea9841533069a.json",
+  "parameterValues" : [ "chrome" ]
+}

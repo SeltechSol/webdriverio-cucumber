@@ -1,0 +1,80 @@
+{
+  "ef5ec367c78b0e861c60baee7d8ecefd" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d3f7dccf42731d8f",
+      "status" : "failed",
+      "statusDetails" : "Error Text is not Defined..!: expected 'Please enter a valid email address.' to equal 'Pleas enter a valid email address.'",
+      "time" : {
+        "start" : 1539515286357,
+        "stop" : 1539515290881,
+        "duration" : 4524
+      }
+    } ]
+  },
+  "c8cca8d81faa2196c6179414bf7916db" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "398f2a2bd4b01796",
+      "status" : "passed",
+      "time" : {
+        "start" : 1539515290882,
+        "stop" : 1539515291839,
+        "duration" : 957
+      }
+    } ]
+  },
+  "bff9931841bd773dc7d153a1b2815ef" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "103cb38ef2d166e5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1539515279732,
+        "stop" : 1539515280952,
+        "duration" : 1220
+      }
+    } ]
+  },
+  "e7d45018d9227233cd91da9db848db96" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "307ea9841533069a",
+      "status" : "failed",
+      "statusDetails" : "Visible is true..!: expected true to equal false",
+      "time" : {
+        "start" : 1539515278254,
+        "stop" : 1539515279730,
+        "duration" : 1476
+      }
+    } ]
+  }
+}

@@ -1,0 +1,41 @@
+[ {
+  "uid" : "d3f7dccf42731d8f",
+  "name" : "Check the Email Address",
+  "time" : {
+    "start" : 1539515286357,
+    "stop" : 1539515290881,
+    "duration" : 4524
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "307ea9841533069a",
+  "name" : "Check the product button functionality",
+  "time" : {
+    "start" : 1539515278254,
+    "stop" : 1539515279730,
+    "duration" : 1476
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "103cb38ef2d166e5",
+  "name" : "Check the Buy button functionality",
+  "time" : {
+    "start" : 1539515279732,
+    "stop" : 1539515280952,
+    "duration" : 1220
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "398f2a2bd4b01796",
+  "name" : "Check the Empty Review Text Error",
+  "time" : {
+    "start" : 1539515290882,
+    "stop" : 1539515291839,
+    "duration" : 957
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

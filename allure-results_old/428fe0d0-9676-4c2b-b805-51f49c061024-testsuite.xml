@@ -1,0 +1,216 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1539513524817' stop='1539513531419'>
+    <name>Reviews Checks Check the Email Address</name>
+    <title>Reviews Checks Check the Email Address</title>
+    <test-cases>
+        <test-case start='1539513524818' status='passed' stop='1539513527421'>
+            <name>I navigate to the site</name>
+            <title>I navigate to the site</title>
+            <labels>
+                <label name='feature' value='Reviews Checks'/>
+                <label name='story' value='Check the Email Address'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":1,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\Personal\\Work\\Javascript\\webdriverio-cucumber\\features\\Reviews.feature"]'/>
+            </parameters>
+            <steps>
+                <step start='1539513524822' status='passed' stop='1539513527414'>
+                    <name>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/url</name>
+                    <title>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/url</title>
+                    <attachments>
+                        <attachment title='Request' source='e3b70176-339a-4ded-984f-e5f42b109b6e-attachment.json' type='application/json' size='72'/>
+                        <attachment title='Response' source='3196d57e-7acd-44ee-9a75-570a7be85949-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1539513527421' status='passed' stop='1539513527966'>
+            <name>I click on the "product" button</name>
+            <title>I click on the "product" button</title>
+            <labels>
+                <label name='feature' value='Reviews Checks'/>
+                <label name='story' value='Check the Email Address'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":1,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\Personal\\Work\\Javascript\\webdriverio-cucumber\\features\\Reviews.feature"]'/>
+            </parameters>
+            <steps>
+                <step start='1539513527426' status='passed' stop='1539513527460'>
+                    <name>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element</name>
+                    <title>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element</title>
+                    <attachments>
+                        <attachment title='Request' source='e35fbd7a-a69b-4467-9336-4ed5d0eef6e2-attachment.json' type='application/json' size='63'/>
+                        <attachment title='Response' source='2e34b605-4c33-4db3-bd77-c7c32747820e-attachment.json' type='application/json' size='136'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1539513527462' status='passed' stop='1539513527961'>
+                    <name>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element/0.9914331833740349-1/click</name>
+                    <title>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element/0.9914331833740349-1/click</title>
+                    <attachments>
+                        <attachment title='Response' source='eed0a406-2d77-42ef-afb1-e7a4f2904b58-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1539513527966' status='passed' stop='1539513528200'>
+            <name>I set the email value "test.com"</name>
+            <title>I set the email value "test.com"</title>
+            <labels>
+                <label name='feature' value='Reviews Checks'/>
+                <label name='story' value='Check the Email Address'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":1,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\Personal\\Work\\Javascript\\webdriverio-cucumber\\features\\Reviews.feature"]'/>
+            </parameters>
+            <steps>
+                <step start='1539513527969' status='passed' stop='1539513528008'>
+                    <name>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element</name>
+                    <title>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element</title>
+                    <attachments>
+                        <attachment title='Request' source='442ac69d-17c9-40d6-9211-69e4d00be4e6-attachment.json' type='application/json' size='50'/>
+                        <attachment title='Response' source='487fb010-3c17-4927-8c6d-11880070bd22-attachment.json' type='application/json' size='136'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1539513528011' status='passed' stop='1539513528069'>
+                    <name>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element/0.9620018162802533-1/clear</name>
+                    <title>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element/0.9620018162802533-1/clear</title>
+                    <attachments>
+                        <attachment title='Response' source='2047e531-8b59-4dd7-8c7c-6eb2ed74d746-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1539513528069' status='passed' stop='1539513528192'>
+                    <name>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element/0.9620018162802533-1/value</name>
+                    <title>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element/0.9620018162802533-1/value</title>
+                    <attachments>
+                        <attachment title='Request' source='e62c0b1d-0ac1-4543-9afe-ed9a85333593-attachment.json' type='application/json' size='151'/>
+                        <attachment title='Response' source='d91c2182-cdce-4fd6-9c1f-ab8ba90dabe9-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1539513528200' status='passed' stop='1539513528205'>
+            <name>I set the following login credentials</name>
+            <title>I set the following login credentials</title>
+            <labels>
+                <label name='feature' value='Reviews Checks'/>
+                <label name='story' value='Check the Email Address'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":1,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\Personal\\Work\\Javascript\\webdriverio-cucumber\\features\\Reviews.feature"]'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1539513528205' status='passed' stop='1539513528346'>
+            <name>I click on review text box with user@phptravels.com and demouser</name>
+            <title>I click on review text box with user@phptravels.com and demouser</title>
+            <labels>
+                <label name='feature' value='Reviews Checks'/>
+                <label name='story' value='Check the Email Address'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":1,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\Personal\\Work\\Javascript\\webdriverio-cucumber\\features\\Reviews.feature"]'/>
+            </parameters>
+            <steps>
+                <step start='1539513528212' status='passed' stop='1539513528245'>
+                    <name>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element</name>
+                    <title>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element</title>
+                    <attachments>
+                        <attachment title='Request' source='df1e215b-d396-4959-bf94-fe886fcb98ce-attachment.json' type='application/json' size='68'/>
+                        <attachment title='Response' source='8bcd471e-ddf9-467b-b6a7-bcad66b4bf2b-attachment.json' type='application/json' size='136'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1539513528247' status='passed' stop='1539513528345'>
+                    <name>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element/0.9620018162802533-2/click</name>
+                    <title>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element/0.9620018162802533-2/click</title>
+                    <attachments>
+                        <attachment title='Response' source='6b490bc7-b7ba-4a68-ab5c-d2d4900583c0-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1539513528346' status='failed' stop='1539513531418'>
+            <name>I should see error message "Please enter a valid email address." for email</name>
+            <title>I should see error message "Please enter a valid email address." for email</title>
+            <labels>
+                <label name='feature' value='Reviews Checks'/>
+                <label name='story' value='Check the Email Address'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":1,"browserName":"chrome"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\Personal\\Work\\Javascript\\webdriverio-cucumber\\features\\Reviews.feature"]'/>
+            </parameters>
+            <steps>
+                <step start='1539513528349' status='passed' stop='1539513528376'>
+                    <name>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element</name>
+                    <title>POST /wd/hub/session/f611482a10495331155f9e2bf6508611/element</title>
+                    <attachments>
+                        <attachment title='Request' source='e718f6dc-f75d-4ec9-a490-3c102736e42e-attachment.json' type='application/json' size='60'/>
+                        <attachment title='Response' source='578a23ce-03e9-49ec-982b-8e08e26fc198-attachment.json' type='application/json' size='136'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1539513528378' status='passed' stop='1539513528409'>
+                    <name>GET /wd/hub/session/f611482a10495331155f9e2bf6508611/element/0.9620018162802533-3/text</name>
+                    <title>GET /wd/hub/session/f611482a10495331155f9e2bf6508611/element/0.9620018162802533-3/text</title>
+                    <attachments>
+                        <attachment title='Response' source='b350a28f-2582-4d70-909f-a68a9e3b1add-attachment.json' type='application/json' size='124'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error Text is not Defined..!: expected 'Please enter a valid email address.' to equal 'Pleas enter a valid email address.'</message>
+                <stack-trace>AssertionError: Error Text is not Defined..!: expected 'Please enter a valid email address.' to equal 'Pleas enter a valid email address.'
+                    at World.Then (C:\Personal\Work\Javascript\webdriverio-cucumber\test\steps\reviews.step.js:36:25)
+                    at C:\Personal\Work\Javascript\webdriverio-cucumber\node_modules\wdio-sync\build\index.js:590:26
+                    at new Promise (&lt;anonymous>)
+                    at new F (C:\Personal\Work\Javascript\webdriverio-cucumber\node_modules\core-js\library\modules\_export.js:36:28)
+                    at World.executeSync (C:\Personal\Work\Javascript\webdriverio-cucumber\node_modules\wdio-sync\build\index.js:588:12)
+                    at C:\Personal\Work\Javascript\webdriverio-cucumber\node_modules\wdio-sync\build\index.js:210:29</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

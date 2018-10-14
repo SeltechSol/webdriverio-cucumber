@@ -1,0 +1,176 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1539515278171' stop='1539515280952'>
+    <name>Home Page Checks</name>
+    <title>Home Page Checks</title>
+    <test-cases>
+        <test-case start='1539515278254' status='failed' stop='1539515279730'>
+            <name>Check the product button functionality</name>
+            <title>Check the product button functionality</title>
+            <labels>
+                <label name='feature' value='Home Page Checks'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1539515278256' status='passed' stop='1539515279153'>
+                    <name>I navigate to the site</name>
+                    <title>I navigate to the site</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539515278260' status='passed' stop='1539515279145'>
+                            <name>POST /wd/hub/session/1974a174cd32a5d1abbe3515ba0bceb1/url</name>
+                            <title>POST /wd/hub/session/1974a174cd32a5d1abbe3515ba0bceb1/url</title>
+                            <attachments>
+                                <attachment title='Request' source='782f0261-f32f-47a1-ba17-32f2e507c019-attachment.json' type='application/json' size='72'/>
+                                <attachment title='Response' source='0c2cc509-a781-4aa5-8877-660ef1a22ac7-attachment.json' type='application/json' size='91'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1539515279153' status='passed' stop='1539515279627'>
+                    <name>I click on the "product" button</name>
+                    <title>I click on the "product" button</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539515279158' status='passed' stop='1539515279192'>
+                            <name>POST /wd/hub/session/1974a174cd32a5d1abbe3515ba0bceb1/element</name>
+                            <title>POST /wd/hub/session/1974a174cd32a5d1abbe3515ba0bceb1/element</title>
+                            <attachments>
+                                <attachment title='Request' source='d28de1bd-a0f4-475c-86f5-72ae069ca0c0-attachment.json' type='application/json' size='63'/>
+                                <attachment title='Response' source='1c965772-23d7-4d96-9c10-f2e894c49ef4-attachment.json' type='application/json' size='137'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                        <step start='1539515279193' status='passed' stop='1539515279623'>
+                            <name>POST /wd/hub/session/1974a174cd32a5d1abbe3515ba0bceb1/element/0.49072597085692427-1/click</name>
+                            <title>POST /wd/hub/session/1974a174cd32a5d1abbe3515ba0bceb1/element/0.49072597085692427-1/click</title>
+                            <attachments>
+                                <attachment title='Response' source='025de832-e823-46f0-9cc8-efb10025cf33-attachment.json' type='application/json' size='91'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1539515279627' status='failed' stop='1539515279730'>
+                    <name>I should be seeing the review label</name>
+                    <title>I should be seeing the review label</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539515279631' status='passed' stop='1539515279661'>
+                            <name>POST /wd/hub/session/1974a174cd32a5d1abbe3515ba0bceb1/elements</name>
+                            <title>POST /wd/hub/session/1974a174cd32a5d1abbe3515ba0bceb1/elements</title>
+                            <attachments>
+                                <attachment title='Request' source='aa7ae499-9dfd-4238-84d4-13af89b120b4-attachment.json' type='application/json' size='66'/>
+                                <attachment title='Response' source='afff4c7a-9db6-4e1a-bf04-30431ec80c1c-attachment.json' type='application/json' size='162'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                        <step start='1539515279663' status='passed' stop='1539515279685'>
+                            <name>POST /wd/hub/session/1974a174cd32a5d1abbe3515ba0bceb1/elements</name>
+                            <title>POST /wd/hub/session/1974a174cd32a5d1abbe3515ba0bceb1/elements</title>
+                            <attachments>
+                                <attachment title='Request' source='a11c1eb5-5ba8-43e4-9df0-f54c79bd5715-attachment.json' type='application/json' size='66'/>
+                                <attachment title='Response' source='d301138a-1ac6-4709-82b6-cae9eeea1cf1-attachment.json' type='application/json' size='162'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                        <step start='1539515279686' status='passed' stop='1539515279716'>
+                            <name>GET /wd/hub/session/1974a174cd32a5d1abbe3515ba0bceb1/element/0.004333349687686061-1/displayed</name>
+                            <title>GET /wd/hub/session/1974a174cd32a5d1abbe3515ba0bceb1/element/0.004333349687686061-1/displayed</title>
+                            <attachments>
+                                <attachment title='Response' source='6cdb1add-b6bd-4ab2-82f8-10cb062c24e7-attachment.json' type='application/json' size='91'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Visible is true..!: expected true to equal false</message>
+                <stack-trace>AssertionError: Visible is true..!: expected true to equal false
+                    at World.&lt;anonymous> (C:\Personal\Work\Javascript\webdriverio-cucumber\test\steps\homePage.step.js:33:24)
+                    at C:\Personal\Work\Javascript\webdriverio-cucumber\node_modules\wdio-sync\build\index.js:590:26
+                    at new Promise (&lt;anonymous>)
+                    at new F (C:\Personal\Work\Javascript\webdriverio-cucumber\node_modules\core-js\library\modules\_export.js:36:28)
+                    at World.executeSync (C:\Personal\Work\Javascript\webdriverio-cucumber\node_modules\wdio-sync\build\index.js:588:12)
+                    at C:\Personal\Work\Javascript\webdriverio-cucumber\node_modules\wdio-sync\build\index.js:210:29</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1539515279732' status='passed' stop='1539515280952'>
+            <name>Check the Buy button functionality</name>
+            <title>Check the Buy button functionality</title>
+            <labels>
+                <label name='feature' value='Home Page Checks'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1539515279733' status='passed' stop='1539515280211'>
+                    <name>I navigate to the site</name>
+                    <title>I navigate to the site</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539515279735' status='passed' stop='1539515280211'>
+                            <name>GET /wd/hub/session/1974a174cd32a5d1abbe3515ba0bceb1/screenshot</name>
+                            <title>GET /wd/hub/session/1974a174cd32a5d1abbe3515ba0bceb1/screenshot</title>
+                            <attachments/>
+                            <steps>
+                                <step start='1539515279737' status='passed' stop='1539515280206'>
+                                    <name>POST /wd/hub/session/1974a174cd32a5d1abbe3515ba0bceb1/url</name>
+                                    <title>POST /wd/hub/session/1974a174cd32a5d1abbe3515ba0bceb1/url</title>
+                                    <attachments>
+                                        <attachment title='Request' source='2e289a3b-3e74-416e-9296-d385f69eda0c-attachment.json' type='application/json' size='72'/>
+                                        <attachment title='Screenshot' source='ba2ed3a4-ef60-4d51-b585-ba15a9844d4f-attachment.png' type='image/png' size='271183'/>
+                                        <attachment title='Response' source='ee60a4a3-cf27-4ade-bec2-0cba4ad77ad5-attachment.json' type='application/json' size='91'/>
+                                    </attachments>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1539515280211' status='passed' stop='1539515280948'>
+                    <name>I click on the "buy" button</name>
+                    <title>I click on the "buy" button</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1539515280217' status='passed' stop='1539515280249'>
+                            <name>POST /wd/hub/session/1974a174cd32a5d1abbe3515ba0bceb1/element</name>
+                            <title>POST /wd/hub/session/1974a174cd32a5d1abbe3515ba0bceb1/element</title>
+                            <attachments>
+                                <attachment title='Request' source='b490fd65-8430-45f6-922d-80040fd1387c-attachment.json' type='application/json' size='53'/>
+                                <attachment title='Response' source='fc6f2e53-9720-4819-a93a-0aa7286a42e2-attachment.json' type='application/json' size='136'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                        <step start='1539515280250' status='passed' stop='1539515280940'>
+                            <name>POST /wd/hub/session/1974a174cd32a5d1abbe3515ba0bceb1/element/0.3786723696086729-1/click</name>
+                            <title>POST /wd/hub/session/1974a174cd32a5d1abbe3515ba0bceb1/element/0.3786723696086729-1/click</title>
+                            <attachments>
+                                <attachment title='Response' source='1e7c2b62-ae97-4ac9-951c-42113cce37a2-attachment.json' type='application/json' size='91'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1539515280948' status='passed' stop='1539515280951'>
+                    <name>I should be seeing the "Mom's_Old-Fashioned_Robot_Oil" page</name>
+                    <title>I should be seeing the "Mom's_Old-Fashioned_Robot_Oil" page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
