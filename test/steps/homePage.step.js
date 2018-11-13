@@ -1,10 +1,10 @@
-//var expect = require('chai').expect;
 const { Given, When, Then } = require('cucumber')
 //const { expect } = require('chai')
 var home = require('../pages/home.page.js');
 var product = require('../pages/product.page.js');
 var common = require('../pages/common.page.js');
 
+//Comenting on homePage.Step
 Given('I navigate to the site', function() {
   browser.url('./');
   console.log("Navigating to the site..!");
