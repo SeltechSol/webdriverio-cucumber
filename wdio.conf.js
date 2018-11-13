@@ -1,13 +1,13 @@
 console.log('<<<<< wdio.conf.js >>>>');
 //var baseURL='http://127.0.0.1:8303';
 var baseURL='http://www.kevinlamping.com/webdriverio-course-content/';
-var datetime;
-
+let browsersSetup = require('./wdio.browsers.setup');
 // if(process.env.SERVER==='PROD'){
 //   baseURL ='http://www.kevinlamping.com/webdriverio-course-content/';
 // }
 exports.config = {
-
+    seleniumArgs: browsersSetup,
+    seleniumInstallArgs: browsersSetup,
     //
     // ==================
     // Specify Test Files
@@ -52,7 +52,9 @@ exports.config = {
         // 5 instances get started at a time.
         maxInstances: 1,
         //
-        browserName: 'chrome'
+        // browserName: 'internet explorer',
+        // ignoreProtectedModeSettings: true
+        browserName: 'firefox',
       }],
     //
     // ===================
@@ -134,7 +136,7 @@ exports.config = {
     framework: 'Cucumber',
     cucumberOpts:{
       require : require('glob').sync('./test/steps/*.js'),
-      //tagExpression: 'not @Pending',
+    //tagExpression: '@home',
         // <boolean> add cucumber tags to feature or scenario name
       //  tagsInTitle: false,
         // <number> timeout for step definitions
@@ -146,13 +148,13 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: http://webdriver.io/guide/reporters/dot.html
-    reporters: ['spec','allure'],//,'junit','allure','json'],//'multiple-cucumber-html'],
+    reporters: ['spec','multiple-cucumber-html'],//,'junit','allure','json'],
     reporterOptions : {
-      allure : {
-         outputDir : 'allure-results',
-         // disableWebdriverScreenshotsReporting: true,
-          useCucumberStepReporter: true
-       },
+      // allure : {
+      //    outputDir : 'allure-results',
+      //    // disableWebdriverScreenshotsReporting: true,
+      //     useCucumberStepReporter: true
+      //  },
        // junit : {
        //    outputDir : './JUnit'
        //  },
@@ -161,52 +163,76 @@ exports.config = {
        //    outputDir : 'json',
        //     combined: true,
        //     filename : 'cucumber'
-       //  }       // htmlReporter: {
-        //    jsonFolder: './json',
-        //    reportFolder: './HTMLReports',
+      //  }
+      htmlReporter: {
+           jsonFolder: './json',
+           reportFolder: './HTMLReports',
 
            // ... other options, see Options
-       //}
-    },
-    afterStep: function afterStep(stepResult) {
-        console.log("-----------------------------------")
-        if(stepResult.status == "passed"){
-           console.log("===============Step passed===============")
-        }else{
-          console.log("===============Step Failed===============")
-      //    browser.takeScreenshot();
-          console.log("Feature : "+stepResult.feature);
-          console.log("Scenario : "+stepResult.scenario);
-          console.log("Step Text : "+stepResult.text);
-          var d = new Date();
-          var datetime = d.getDate() + "_"+ (d.getMonth()+1)  + "_" + d.getFullYear()
-                          + "_"+ d.getHours() + "_" + d.getMinutes() + "_" + d.getSeconds();
-          var fileName = encodeURIComponent(stepResult.scenario.replace(/\s+/g, '-'))+"_"+datetime;
-          var filePath = this.screenshotPath + fileName +'.png';
-          browser.saveScreenshot(filePath);
-          console.log('\n\t Screenshot location:',filePath,'\n');
-          console.log("---------------------Step Failed Ended------------------")
        }
+    },
+    afterScenario: function(scenario){
+    //   console.log("-------------AFTER SCENARIO----------------------")
+    //   if(scenario.results.status == "passed"){
+    //      console.log("===============Step passed===============")
+    //   }else if(scenario.results.status =="failed"){
+    //     console.log("===============Step Failed===============")
+    // //    browser.takeScreenshot();
+    //     console.log("Feature : "+stepResult.feature);
+    //     console.log("Scenario : "+stepResult.scenario);
+    //     console.log("Step Text : "+stepResult.text);
+    //     var d = new Date();
+    //     var datetime = d.getDate() + "_"+ (d.getMonth()+1)  + "_" + d.getFullYear()
+    //                     + "_"+ d.getHours() + "_" + d.getMinutes() + "_" + d.getSeconds();
+    //     var fileName = encodeURIComponent(stepResult.scenario.replace(/\s+/g, '-'))+"_"+datetime;
+    //     var filePath = this.screenshotPath + fileName +'.png';
+    //     browser.saveScreenshot(filePath);
+    //     console.log('\n\t Screenshot location:',filePath,'\n');
+    //     console.log("---------------------Step Failed Ended------------------")
+
+    // }else{
+    //   console.log("---------------------DOESN'T RECOGNISE------------------")
+    // }
+  },
+    afterStep: function afterStep(stepResult) {
+      //   console.log("-----------------------------------")
+      //   if(stepResult.status == "passed"){
+      //      console.log("===============Step passed===============")
+      //   }else{
+      //     console.log("===============Step Failed===============")
+      // //    browser.takeScreenshot();
+      //     console.log("Feature : "+stepResult.feature);
+      //     console.log("Scenario : "+stepResult.scenario);
+      //     console.log("Step Text : "+stepResult.text);
+      //     var d = new Date();
+      //     var datetime = d.getDate() + "_"+ (d.getMonth()+1)  + "_" + d.getFullYear()
+      //                     + "_"+ d.getHours() + "_" + d.getMinutes() + "_" + d.getSeconds();
+      //     var fileName = encodeURIComponent(stepResult.scenario.replace(/\s+/g, '-'))+"_"+datetime;
+      //     var filePath = this.screenshotPath + fileName +'.png';
+      //     browser.saveScreenshot(filePath);
+      //     console.log('\n\t Screenshot location:',filePath,'\n');
+      //     console.log("---------------------Step Failed Ended------------------")
+    //   }
     },
      /**
          * Function to be executed after a test (in Mocha/Jasmine) or a step (in Cucumber) ends.
          * @param {Object} test test details
          */
-        afterTest: function (test) {
-            console.log("=======>>> After Test <<<==========")
-            //console.log('=======>>> After Test <<<==========');
-            if(test.passed){
-              return;
-            }
-            // var d = new Date();
-            // var datetime = d.getDate() + "_"+ (d.getMonth()+1)  + "_" + d.getFullYear()
-            //                + "_"+ d.getHours() + "_" + d.getMinutes() + "_" + d.getSeconds();
-            // var fileName = encodeURIComponent(test.title.replace(/\s+/g, '-'))+"_"+datetime;
-            // var filePath = this.screenshotPath + fileName +'.png';
-            // browser.saveScreenshot(filePath);
-            // console.log('\n\t Screenshot location:',filePath,'\n');
-
-        },
+        // afterTest: function (test) {
+        //     console.log("=======>>> After Test <<<==========")
+        //     //console.log('=======>>> After Test <<<==========');
+        //     // if(test.passed){
+        //     //   return;
+        //     // }
+        //     // var d = new Date();
+        //     // var datetime = d.getDate() + "_"+ (d.getMonth()+1)  + "_" + d.getFullYear()
+        //     //                + "_"+ d.getHours() + "_" + d.getMinutes() + "_" + d.getSeconds();
+        //     // var fileName = encodeURIComponent(test.title.replace(/\s+/g, '-'))+"_"+datetime;
+        //     // var filePath = this.screenshotPath + fileName +'.png';
+        //     // browser.saveScreenshot(filePath);
+        //     // console.log('\n\t Screenshot location:',filePath,'\n');
+        //
+        // },
 
         /**
          * Function to be executed after a test (in Mocha/Jasmine) or a step (in Cucumber) ends.

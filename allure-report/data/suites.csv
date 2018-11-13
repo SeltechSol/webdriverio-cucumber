@@ -1,5 +1,0 @@
-"Status","Name","Duration in ms","Description"
-"failed","Reviews Checks.Check the Email Address","4524",""
-"failed","Home Page Checks.Check the product button functionality","1476",""
-"passed","Home Page Checks.Check the Buy button functionality","1220",""
-"passed","Reviews Checks.Check the Empty Review Text Error","957",""

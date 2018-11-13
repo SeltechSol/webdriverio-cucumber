@@ -4,9 +4,9 @@
  var common = require('./pages/common.page.js');
 describe('SHOP-BUTTON TESTS',function(){
 
-  beforeEach(function(){
-    browser.url('./');
-  });
+  // beforeEach(function(){
+  //   browser.url('./');
+  // });
   // afterEach(function(){
   //   browser.url(baseURL+'/');
   // });
