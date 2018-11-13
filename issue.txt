@@ -1,0 +1,1 @@
+https://github.com/webdriverio/wdio-cucumber-framework/issues/152
