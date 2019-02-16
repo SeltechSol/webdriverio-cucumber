@@ -155,7 +155,7 @@ exports.config = {
     reporters: ['spec','multiple-cucumber-html','allure'],//,'junit','allure','json'],
     reporterOptions : {
       allure : {
-         outputDir : './allure-results/allure_reportSufix',
+         outputDir : './allure-results/allure_'+reportSufix+'/',
          // disableWebdriverScreenshotsReporting: true,
           useCucumberStepReporter: true
        },
