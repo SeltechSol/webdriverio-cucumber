@@ -2,7 +2,7 @@ console.log('<<<<< wdio.conf.js >>>>');
 var d = new Date();
 datetime = d.getDate() + "_"+ (d.getMonth()+1)  + "_" + d.getFullYear()
                + "_"+ d.getHours() + "_" + d.getMinutes() + "_" + d.getSeconds();
-
+var reportSufix = process.env.BUILD_NUMBER || datetime;
 //var baseURL='http://127.0.0.1:8303';
 var baseURL='http://www.kevinlamping.com/webdriverio-course-content/';
 let browsersSetup = require('./wdio.browsers.setup');
@@ -155,7 +155,7 @@ exports.config = {
     reporters: ['spec','multiple-cucumber-html','allure'],//,'junit','allure','json'],
     reporterOptions : {
       allure : {
-         outputDir : 'allure-results',
+         outputDir : './allure-results/allure_reportSufix',
          // disableWebdriverScreenshotsReporting: true,
           useCucumberStepReporter: true
        },
@@ -169,8 +169,8 @@ exports.config = {
        //     filename : 'cucumber'
       //  }
       htmlReporter:{
-        jsonFolder : './json/json_'+datetime+'/', 
-        reportFolder:'./HTMLReports/Report_'+datetime+'/'
+        jsonFolder : './json/json_'+reportSufix+'/', 
+        reportFolder:'./HTMLReports/Report_'+reportSufix+'/'
 
     }
     },
