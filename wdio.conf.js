@@ -1,4 +1,8 @@
 console.log('<<<<< wdio.conf.js >>>>');
+var d = new Date();
+datetime = d.getDate() + "_"+ (d.getMonth()+1)  + "_" + d.getFullYear()
+               + "_"+ d.getHours() + "_" + d.getMinutes() + "_" + d.getSeconds();
+
 //var baseURL='http://127.0.0.1:8303';
 var baseURL='http://www.kevinlamping.com/webdriverio-course-content/';
 let browsersSetup = require('./wdio.browsers.setup');
@@ -54,7 +58,7 @@ exports.config = {
         //
         // browserName: 'internet explorer',
         // ignoreProtectedModeSettings: true
-        browserName: 'firefox',
+        browserName: 'chrome',
       }],
     //
     // ===================
@@ -164,12 +168,11 @@ exports.config = {
        //     combined: true,
        //     filename : 'cucumber'
       //  }
-      htmlReporter: {
-           jsonFolder: './json',
-           reportFolder: './HTMLReports',
+      htmlReporter:{
+        jsonFolder : './json/json_'+datetime+'/', 
+        reportFolder:'./HTMLReports/Report_'+datetime+'/'
 
-           // ... other options, see Options
-       }
+    }
     },
     afterScenario: function(scenario){
     //   console.log("-------------AFTER SCENARIO----------------------")
