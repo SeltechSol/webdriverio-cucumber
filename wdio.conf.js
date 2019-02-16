@@ -58,7 +58,7 @@ exports.config = {
         //
         // browserName: 'internet explorer',
         // ignoreProtectedModeSettings: true
-        browserName: 'chrome',
+        browserName: process.env.BROWSER || 'chrome',
       }],
     //
     // ===================
@@ -152,14 +152,14 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: http://webdriver.io/guide/reporters/dot.html
-    reporters: ['spec','multiple-cucumber-html'],//,'junit','allure','json'],
+    reporters: ['spec','multiple-cucumber-html','allure'],//,'junit','allure','json'],
     reporterOptions : {
-      // allure : {
-      //    outputDir : 'allure-results',
-      //    // disableWebdriverScreenshotsReporting: true,
-      //     useCucumberStepReporter: true
-      //  },
-       // junit : {
+      allure : {
+         outputDir : 'allure-results',
+         // disableWebdriverScreenshotsReporting: true,
+          useCucumberStepReporter: true
+       },
+      // junit : {
        //    outputDir : './JUnit'
        //  },
 

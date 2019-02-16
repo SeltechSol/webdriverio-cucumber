@@ -5,7 +5,7 @@ Feature: Reviews Checks
 
   Background: Opening the site
      Given I navigate to the site
-
+  @wip1
   Scenario Outline: Check the Email Address
      When I click on the "product" button
      And I set the email value "test.com"
