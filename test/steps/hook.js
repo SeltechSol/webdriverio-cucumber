@@ -6,5 +6,5 @@ After((scenarioResult)=>{
     // It will add the screenshot to the JSON
     browser.saveScreenshot()
   }
-  //return scenarioResult.status;
+  return scenarioResult.status;
 });

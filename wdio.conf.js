@@ -155,11 +155,16 @@ exports.config = {
     reporters: ['spec','multiple-cucumber-html','allure'],//,'junit','allure','json'],
     reporterOptions : {
       allure : {
-         outputDir : './allure-results/allure_'+reportSufix+'/',
-         // disableWebdriverScreenshotsReporting: true,
-          useCucumberStepReporter: true
+         outputDir : 'allure-results',//./allure-results/'+reportSufix+'/',
+         disableWebdriverScreenshotsReporting: false,
+         useCucumberStepReporter: true
        },
-      // junit : {
+        htmlReporter:{
+        jsonFolder : './json/json_'+reportSufix+'/', 
+        reportFolder:'./HTMLReports/Report_'+reportSufix+'/'
+
+       }
+           // junit : {
        //    outputDir : './JUnit'
        //  },
 
@@ -168,12 +173,14 @@ exports.config = {
        //     combined: true,
        //     filename : 'cucumber'
       //  }
-      htmlReporter:{
-        jsonFolder : './json/json_'+reportSufix+'/', 
-        reportFolder:'./HTMLReports/Report_'+reportSufix+'/'
 
-    }
     },
+    // afterTest: function (test) {
+    //     console.log('=======>>> After Test <<<==========');
+    //     if (test.error !== undefined) {
+    //         browser.takeScreenshot();
+    //      }
+    // },
     afterScenario: function(scenario){
     //   console.log("-------------AFTER SCENARIO----------------------")
     //   if(scenario.results.status == "passed"){
@@ -241,20 +248,23 @@ exports.config = {
          * Function to be executed after a test (in Mocha/Jasmine) or a step (in Cucumber) ends.
          * @param {Object} test test details
          */
-        afterTest: function (test) {
-            console.log('=======>>> After Test <<<==========');
-            if(test.passed){
-              return;
-            }
-            // var d = new Date();
-            // var datetime = d.getDate() + "_"+ (d.getMonth()+1)  + "_" + d.getFullYear()
-            //                + "_"+ d.getHours() + "_" + d.getMinutes() + "_" + d.getSeconds();
-            // var fileName = encodeURIComponent(test.title.replace(/\s+/g, '-'))+"_"+datetime;
-            // var filePath = this.screenshotPath + fileName +'.png';
-            // browser.saveScreenshot(filePath);
-            // console.log('\n\t Screenshot location:',filePath,'\n');
+        // afterTest: function (test) {
+        //     console.log('=======>>> After Test <<<==========');
+        //     // if (test.error !== undefined) {
+        //     //     browser.takeScreenshot();
+        //     //  }
+        //     // if(test.passed){
+        //     //   return;
+        //     // }
+        //     // var d = new Date();
+        //     // var datetime = d.getDate() + "_"+ (d.getMonth()+1)  + "_" + d.getFullYear()
+        //     //                + "_"+ d.getHours() + "_" + d.getMinutes() + "_" + d.getSeconds();
+        //     // var fileName = encodeURIComponent(test.title.replace(/\s+/g, '-'))+"_"+datetime;
+        //     // var filePath = this.screenshotPath + fileName +'.png';
+        //     // browser.saveScreenshot(filePath);
+        //     // console.log('\n\t Screenshot location:',filePath,'\n');
 
-        },
+        // },
 
     //
     // Options to be passed to Mocha.
@@ -302,7 +312,7 @@ exports.config = {
      */
      before: function (capabilities, specs) {
          console.log('££££ Before ££££££££');
-     expect = require('chai').expect;
+         expect = require('chai').expect;
      },
        // var home = require('./pages/home.page.js');
        // var product = require('./pages/product.page.js');
